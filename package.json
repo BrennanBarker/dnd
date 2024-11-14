@@ -1,0 +1,23 @@
+{
+  "name": "dnd",
+  "version": "1.0.0",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/app-root.js --bundle --outfile=web/bundle.js --minify",
+    "watch": "esbuild src/app-root.js --bundle --outfile=web/bundle.js --minify --watch",
+    "markup": "echo \"import {html} from 'lit';const x=html\\`$(npx commonmark src/hi.md)\\`;export default x;\" > src/hi.js",
+    "cool": "npm run markup && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "lit": "^3.2.1"
+  },
+  "devDependencies": {
+    "commonmark": "^0.31.2",
+    "esbuild": "^0.24.0"
+  }
+}

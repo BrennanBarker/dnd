@@ -1,0 +1,32 @@
+body, input {
+    font: 1.2rem "Fira Sans", sans-serif;
+}
+
+.borderless {
+    border: none;
+    outline: none;
+}
+
+.big-text {
+    font-size: 1.25em
+}
+
+.two-digit {
+    width: 2em;
+    margin-right: -15px
+}
+
+.denominator::before {
+    content: "/";
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
